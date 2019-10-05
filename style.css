@@ -243,6 +243,7 @@ nav #menu li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+    top:100rem;
 }   
 
 .hero h1{
@@ -250,6 +251,8 @@ nav #menu li a:hover{
     text-align: center;
     letter-spacing: -2px;
     line-height: 58px;
+    position: relative;
+    top:-100px;
 }
 
 @media(max-width: 768px){
@@ -314,8 +317,118 @@ h3{
     background-size: cover;
     position: relative;
     left:71.5rem;
+    width: 39.8%;
+}
+
+/* work images and text before them */
+
+
+/* this solved the automatically changing positions problem */
+.work1, .work2, .work3{
+    position: relative;
+}
+
+
+
+.work1 img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: cover;
+    position: absolute;
+    left:50.5rem;
+    width: 38rem;
+    height:auto;
+    top:5rem;
+    transition: 0.5s;
+}
+
+
+.work1 img:hover, .work2 img:hover, .work3 img:hover{
+    width:39rem;
+    height:auto;
+    
+}
+
+.text1{
+    font-size:30px;
+    position: relative;
+    top:15rem;
+    left:6rem;
+}
+
+.text2{
+    font-size:30px;
+    position: relative;
+    top:37rem;
+    left:6rem;
+}
+
+.text3{
+    font-size:30px;
+    position: relative;
+    top:50rem;
+    left:6rem;
+    
+}
+
+
+
+.work2 img{
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: cover;
+    position: absolute;
+    left:50.5rem;
+    top:25rem;
+    width:38rem;
+    height:auto;
+}
+
+.work3 img{
+    transition: 0.5s;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    background-size: cover;
+    position: absolute;
+    left:50.5rem;
+    top:40rem;
+    width:38rem;
+    height:auto;
+}
+
+
+
+/* don think this works 
+.work2::after{
+    content: "Promotion website:";
+    font-size:30px;
+    position: absolute;;
+    display: block;
+    top:40%;
+    left: -130%;
+}
+
+.work3{
+    margin-top:100px;
+    background: url(blur.PNG) no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    left:50.5rem;
     width: 40%;
 }
+
+.work3::after{
+    content: "Landing page with blur effect:";
+    font-size:30px;
+    position: absolute;;
+    display: block;
+    top:40%;
+    left: -130%;
+}
+*/
+
+
 
 /* cool way to put text on/near an image in css*/
 .project1::after{
@@ -387,6 +500,7 @@ h3{
 }
 
 /*  footer section */
+
 .collab{
     text-align: right;
 }
@@ -404,10 +518,6 @@ h3{
     height: 1px;
 }
 
-.info h4{
-    font-size: 18px;
-    font-weight: lighter;
-}
 
 /* this is cool - making the messages grey and the info about me white and lighter */
 .info p{
@@ -422,7 +532,6 @@ h3{
     border-radius:100%;
     height:4px;
     
-    margin-right:2px;
 }
 
 #ig::before{
@@ -430,7 +539,7 @@ h3{
     content:'';
     border-radius:100%;
     height:1px;
-    margin-right:2px;
+    
 }
 
 #ld::before{
@@ -439,26 +548,27 @@ h3{
     border-radius:100%;
     height:4px;
     width:0px;
-    margin-right:2px;
+   
 }
 
 .cnct{
-    position: relative;
-    left: 5rem;
-    top:2rem;
+    position: absolute;
+    left:5rem;
+   
 }
 
 .pers{
-    position: relative;
-    left:50rem;
-    top:-3rem;
+    position: absolute;
+    left:95rem;
 }
 
 .say{
-    position:relative;
-    left:90rem;
-    top:-10rem;
+    position: absolute;
+    left:50rem;
+
 }
+
+
 
 #media, #address{
     text-align: right;
@@ -529,11 +639,10 @@ h3{
 }
 
 .image{
-    background: url(13327549_1180469378639862_183018363119427005_n.jpg) no-repeat 58% 21%;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-    width:14rem;
-    height:14rem;
+    background: url(pic2.png) no-repeat 10% 10%;
+    
+    width:20rem;
+    height:20rem;
     border-radius: 50%;
 }
 
@@ -609,4 +718,20 @@ textarea:focus{
         margin: 5% -8%;
         width: 90%;
     }
+}
+
+
+
+a{
+    color: inherit;
+    text-decoration: none;
+    transition: font-size 0.5s;
+}
+a:hover{
+    font-size:1.3rem;
+}
+
+
+.footer{
+    padding-bottom:10rem;
 }
