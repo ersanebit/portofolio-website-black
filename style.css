@@ -10,6 +10,7 @@ html{
     background: rgb(0, 0, 0);
     color:rgb(216, 212, 212);
     font-family: 'Courier New', Courier, monospace;
+    
 }
 
 .whitespace{
@@ -640,7 +641,6 @@ h3{
 
 .image{
     background: url(pic2.png) no-repeat 10% 10%;
-    
     width:20rem;
     height:20rem;
     border-radius: 50%;
@@ -734,4 +734,96 @@ a:hover{
 
 .footer{
     padding-bottom:10rem;
+}
+
+@media(max-width: 700px){
+    .one{
+        max-width: 1000px;
+        text-align: center;
+        width:100%;
+        left:2px;
+    }
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .text1, .text2, .text3{
+        
+        left:10px;
+    }
+
+    .text2{
+        top:28rem;
+    }
+    .text3{
+        top:36rem;
+    }
+
+    .whole1 img{
+        width:25rem;
+        left:-190px;
+        top:18rem;
+    }
+
+    .whole2 img{
+        width:25rem;
+        left:-190px;
+        top:30rem;
+    }
+
+    .whole3 img{
+        width:25rem;
+        left:-190px;
+        top:37rem;
+    }
+
+    .whole1 img:hover, .whole2 img:hover, .whole3 img:hover{
+        width:25rem;
+    }
+
+    .image{
+        background: url(pic2.png) no-repeat 10% 10%;
+        width:17rem;
+        height:17rem;
+        border-radius: 50%;   
+        position: relative;
+        margin: 100px 100px;
+        
+    }
+
+    .collab p{
+        max-width: 500px;
+        position: relative;
+        text-align: center;
+        left:10px;
+    }
+    .cnct, .pers, .say{
+        position: relative;
+        display: table-row;
+        text-align: center;
+    }
+    
+    
+
+    .info{
+        position: relative;
+        left:10rem;
+        text-align: center;
+    }
+    
+        
+    .pers{
+      top:100px;
+        
+    }
+
+    .about-text{
+        top:-130px;
+    }
+
+    .project1, .project2, .project3{
+        left:1px;
+    }
+   
 }
